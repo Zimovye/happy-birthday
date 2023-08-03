@@ -1,0 +1,147 @@
+.gallery {
+}
+
+.gallery__container {
+  margin-left: 48px;
+  margin-right: 41px;
+}
+  .gallery__container > div {
+    grid-gap: 25px;
+  }
+  .gallery__container > div:last-child {
+    margin-top: 25px;
+  }
+
+.gallery__grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.16fr;
+  grid-template-rows: 305px 520px;
+  /* gap: 20px; */
+}
+.gallery__grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 712px;
+}
+
+
+
+#photo-1 {
+  background-image: url(../../img/gallery/Photo1.png);
+  background-size: cover;
+  background-position: center;
+  /* // image */
+}
+#photo-2 {
+  background-image: url(../../img/gallery/Photo2.png);
+  background-size: cover;
+  background-position: center;
+  /* // image */
+}
+#photo-3 {
+  background-image: url(../../img/gallery/Photo3.png);
+  background-size: cover;
+  background-position: center;
+  /* // image */
+}
+
+#photo-4 {
+  background-image: url(../../img/gallery/Photo4.png);
+  background-size: cover;
+  background-position: center;
+  /* // image */
+  
+  grid-row: 1 / 3;
+  grid-column: 4 / 4;
+}
+
+#photo-5 {
+  background-image: url(../../img/gallery/Photo5.png);
+  background-size: cover;
+  background-position: center;
+  /* // image */
+  
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+#photo-6 {
+  background-image: url(../../img/gallery/Photo6.png);
+  background-size: cover;
+  background-position: center;
+  /* // image */
+}
+#photo-7 {
+  background-image: url(../../img/gallery/Photo7NEW.png);
+  background-size: cover;
+  background-position: center;
+  /* // image */
+}
+#photo-8 {
+  background-image: url(../../img/gallery/Photo8.png);
+  background-size: cover;
+  background-position: center;
+  /* // image */
+}
+  .photo img {
+    /* min-width: min-content; */
+    max-width: max-content;
+
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+    button::-moz-focus-inner {
+      border: none;
+      padding: 0;
+      outline: none;
+      margin: 0;
+      box-shadow: none;
+      filter: none;
+      background: none;
+    }
+    button {
+      border: none;
+      padding: 0;
+      outline: none;
+      margin: 0;
+      box-shadow: none;
+      filter: none;
+      background: none;
+    }
+.photo {
+  width: 100%;
+  height: 100%;
+  background-color: coral;
+  
+  outline: 8px solid rgba(0, 0, 0, 0);
+  outline-offset: 0;
+  transition: all ease 0.3s;
+}
+  .photo:hover {
+    outline: 8px solid coral;
+    outline-offset: 15px;
+  }
+    .photo p {
+      color: transparent;
+      font-weight: 700;
+      font-size: 0;
+    }
+
+.photo-click {
+  animation: none !important; 
+  transform: scaleX(-100%);
+  background: linear-gradient(to bottom right, #FF5F6D, #FFC371) !important;
+
+  outline: none !important;
+  outline-offset: 0 !important;
+  border-radius: 25px !important;
+}
+  .photo-click p {
+    transform: scaleX(-100%);
+    color: #aa2f1f !important;
+    font-weight: 700 !important;
+    font-size: 45px;
+  }
+  

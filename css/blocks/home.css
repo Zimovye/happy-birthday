@@ -1,0 +1,134 @@
+.home {
+    max-width: 100vw;
+    height: 100vh;
+    
+    box-sizing: border-box; 
+    position: relative;
+}
+
+.home__congratulation-container {
+    width: 941px;
+    height: 265px;
+
+    background-image: url(../../img/home/ContainerDesktopBG.svg);
+    background-size: cover;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home__congratulation-content {
+    width: 100%;
+    height: 100%;
+
+    padding-top: 20px;
+    padding-left: 40px;
+
+    position: relative;
+}
+
+.home__title {
+    position: relative;
+}
+
+.home__text {
+    width: 331px;
+
+    position: absolute;
+    top: 53px;
+    left: 557px;
+}
+    .home__text > div {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .home__text::before {
+        content: '';
+        min-width: 331px;
+        min-height: 169px;
+        position: absolute;
+
+        background-color: rgb(234, 234, 234);
+        border-radius: 23px;
+        filter: blur(13.5px);
+    }
+    .home__text p {
+        margin-left: 15px;
+    }
+
+.home__firework {
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    width: 125px;
+    height: 125px;
+}
+
+.home__fireworkGun {
+    position: absolute;
+    bottom: 0;
+}
+    .home__fireworkGun_one {
+        transform: scaleX(-100%) rotate(30deg);
+        left: -80px;
+    }
+    .home__fireworkGun_two {
+        z-index: 1;
+    }
+    .home__fireworkGun_three {
+        transform: rotate(30deg);
+        left: 50px;
+    }
+
+.home__scroll-img {
+    position: absolute;
+    bottom: 6%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ========== slider ========== */
+.slider {
+    max-width: 100vw;
+    max-height: 100vh;
+
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    display: block;
+
+    /* filter: blur(2px); */
+}
+
+.slider__container {
+    display: flex;
+    position: relative;
+
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    max-width: 100vw;
+    height: 100vh;
+    flex: 0 0 100%;
+}
+.slide img {
+    width: 100%;
+    min-height: min-content;
+    max-height: max-content;
+ 
+    /* height: 100%;
+    width: 100%;
+    min-height: min-content;
+    max-height: max-content;
+    min-width: min-content;
+    max-width: max-content; */
+}
+/* //======== slider ========== */

@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Irish Grover';
+    src: url('Karantina-Regular.woff');
+    src: local('Karantina Regular'), local('Karantina-Regular'),
+        url('./Irish_Grover/IrishGrover-Regular.woff2') format('woff2'),
+        url('./Irish_Grover/IrishGrover-Regular.woff') format('woff'),
+        url('./Irish_Grover/IrishGrover-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

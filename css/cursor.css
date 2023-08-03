@@ -1,0 +1,153 @@
+.cursor-container {
+  pointer-events: none;
+
+  display: block;
+  position: absolute;
+  z-index: 5;
+  opacity: 0;
+
+  width: 28px;
+  height: 28px;
+}
+/* ----- Присваиваем анимации ----- */
+#home__cursor {
+  transform: translateY(calc(var(--fireworkPositionY) - 20px));
+  /* animation: fireworkX_animation .8s linear forwards; */
+}
+#gallery__cursor {
+  transform:
+    translateY(calc(var(--photoPositionY) - 50px))
+    translateX(calc(var(--photoPositionX) - -650px))
+  ;
+  /* animation: rotate .5s linear forwards; */
+}
+/* -//-- Присваиваем анимации ----- */
+.cursor {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 191.25px;
+  height: 191.25px;
+
+  background-image: url(../img/cursor.png); 
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position: 70px 95px;
+
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ----- Присваиваем анимации ----- */
+#home__cursor > div {
+  /* animation: fireworkY_animation .8s cubic-bezier(.5,.55,.5, .55) forwards; */
+}
+/* -//-- Присваиваем анимации ----- */
+.cursor__wave {
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* ===== Создаём анимации ===== */
+  /* -- анимация волны при клике */
+  @keyframes cursor__wave_active {
+    0% {
+      box-shadow: 0 0 30px 15px #2b00ff;
+      width: 0;
+      height: 0;
+      transform: scale(0.05px 0.05px);
+      opacity: 1;
+    }
+    99% {
+      width: 85px;
+      height: 85px;
+      transform: scale(225%);
+      opacity: 0;
+    }
+    100% {
+      width: 0.05px;
+      height: 0.05px;
+      transform: scale(0%);
+    }
+  }
+  /* // анимация волны при клике */
+  /* -- анимация объекта при клике на него */
+  @keyframes objectOnClick {
+    0% {
+      transform: scale(100%);
+    }
+    50% {
+      transform: scale(120%);
+    }
+    100% {
+      transform: scale(100%);
+    }
+  }
+  /* // анимация объекта при клике на него */
+  /* -- поворот курсора в другую сторону */
+  @keyframes rotate {
+    0% {
+      transform: rotate(270deg);
+    }
+    100% {
+      transform: rotate(270deg);
+    }
+  }
+  /* // поворот курсора в другую сторону */
+
+  
+  /* -- курсор к фейрверку */
+  @keyframes fireworkX_animation {
+    from {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+      transform: translateX(var(--fireworkPositionX))
+    }
+  }
+  @keyframes fireworkY_animation {
+    to {
+      transform: translateY(var(--fireworkPositionY))
+    }
+  }
+  /* // курсор к фейрверку */
+  /* -- курсор к фото */
+  @keyframes photoX_animation {
+    from {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+      transform: translateX(var(--photoPositionX));
+    }
+  }
+  @keyframes photoY_animation {
+    to {
+      transform: translateY(var(--photoPositionY));
+    }
+  }
+  /* // курсор к фото */
+
+/* ===== Создаём анимации ===== */
+
+
+@media only screen and (max-width: 1399px) {
+  .cursor-container {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}

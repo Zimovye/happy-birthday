@@ -1,0 +1,99 @@
+/*========== Desktop First ========== */
+/* Full HD */
+@media only screen and (max-width: 2500px) {
+  .photo {
+    background-position: top !important;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1200px) {
+  .gallery__grid1 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 305px 305px 520px;
+    /* gap: 20px; */
+  }
+  #photo-4 {
+    background-position-y: -120px;
+    background-position-x: center;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+  #photo-5 {
+    grid-row: 3 / 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+@media only screen and (max-width: 975px) {
+  .gallery__grid2 button p {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 595px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: left;
+    margin: 0;
+  }
+  /* .footer__social {
+    margin-left: 0;
+    margin-right: auto;
+  } */
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 522px) {
+  .gallery__grid1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 305px 305px 305px 305px 520px;
+    /* gap: 20px; */
+  }
+  #photo-1 {
+    grid-row: 1 / 2;
+    grid-column: auto;
+  }
+  #photo-2 {
+    grid-row: 2 / 3;
+    grid-column: auto;
+  }
+  #photo-3 {
+    grid-row: 3 / 4;
+    grid-column: auto;
+  } 
+  
+  #photo-4 {
+    grid-column: auto;
+    grid-row: 4 / 5;
+  }
+  
+  #photo-5 {
+    grid-column: auto;
+    grid-row: 5 / 6;
+  }
+
+  .gallery__grid2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 712px);
+  }
+}
+/* Custom, IPhone Retina */
+@media only screen and (max-width: 380px) {
+  #photo-5 p {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .footer__copyright-text {
+    font-size: 20px;
+  }
+}

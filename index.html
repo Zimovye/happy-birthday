@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dementev Yaroslav">
+    <meta name="Keywords" content="день рождения, праздник, дедушка, день рождения дедушки, happy birthday, birthday, party, grandpa, my grandpa's birthday">
+	<meta name="description" content="день рождения дедушки">
+    <title>HAPPY BIRTHDAY, GRANDPA</title>
+
+    <link rel="icon" href="./icon.png">
+<!-- ========== css ========== -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./fonts/fontStyles.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- ***** blocks ***** -->
+        <link rel="stylesheet" href="./css/blocks/home.css">
+        <link rel="stylesheet" href="./css/blocks/gallery.css">
+        <link rel="stylesheet" href="./css/blocks/footer.css">
+    <!-- //*** blocks ***** -->
+    <link rel="stylesheet" href="./css/cursor.css">
+    <!-- ***** adaptive ***** -->
+        <link rel="stylesheet" href="./css/adaptive/(adaptive_home(old)).css">
+        <link rel="stylesheet" href="./css/adaptive/adaptive_galleryAndFooter.css">
+    <!-- //*** adaptive ***** -->
+<!-- //======== css ========== -->
+
+<script defer src="./javascript/cursors.js"></script>
+</head>
+<body>
+<div id="all-content">
+    <section class="home">
+        <div class="slider">
+            <div class="slider__container">
+                <div class="slide activeslide" id="slide-1">
+                    <img src="./img/home/Desktop/desktopHomeBG_1.png" alt="slide1" id="slide-1">
+                </div>
+                <div class="slide" id="slide-2">
+                    <img src="./img/home/Desktop/desktopHomeBG_2.png" alt="slide2" id="slide-2">
+                </div>
+                <div class="slide" id="slide-3">
+                    <img src="./img/home/Desktop/desktopHomeBG_3.png" alt="slide3" id="slide-3">
+                </div>
+                <div class="slide" id="slide-4">
+                    <img src="./img/home/Desktop/desktopHomeBG_4.png" alt="slide4" id="slide-4">
+                </div>
+            </div>
+        </div>
+
+        <article class="home__congratulation-container">
+            <div class="home__congratulation-content">
+                <h1 class="home__title title">
+                    <span class="red">H</span><span class="blue">a</span><span class="green">p</span><span class="pink">p</span><span class="yellow">y</span>
+                    <span class="purple">B</span><span class="red">i</span><span class="blue">r</span><span class="green">t</span><span class="pink">h</span><span class="yellow">d</span><span class="purple">a</span><span class="pink">y</span>
+                    
+                    <div class="home__text text_bold">
+                        <div><p>Дедушка Андрей</p></div>
+                    </div>
+                </h1>
+                <div class="home__firework" id="fireworkBox">
+                    <button id="startFirework" title="click me">
+                        <img class="home__fireworkGun home__fireworkGun_one" id="home__fireworkGun_oneID" src="./img/home/fireworkGun.png" alt="fireworkGun1">
+                        <img class="home__fireworkGun home__fireworkGun_two" id="home__fireworkGun_twoID" src="./img/home/fireworkGun.png" alt="fireworkGun2">
+                        <img class="home__fireworkGun home__fireworkGun_three" id="home__fireworkGun_threeID" src="./img/home/fireworkGun.png" alt="fireworkGun3">
+                    </button>
+                </div>
+                    <script> // активирует анимацию ферйверков
+                        startFirework.onclick = function() {
+                            animate({
+                                duration: 700,
+                                timing: function(timeFraction) {
+                                    return timeFraction;
+                                },
+                                draw: function(progress) {
+                                    if (window.screen.width < 1295) {
+                                        if (window.screen.width < 960) {
+                                            if (window.screen.width < 587) {
+                                                if (window.screen.width < 325) {
+                                                    home__fireworkGun_oneID.style.bottom = progress * 200 + 'px'
+                                                    home__fireworkGun_oneID.style.marginLeft = progress * -25 + 'px'
+                                                    home__fireworkGun_twoID.style.bottom = progress * 400 + 'px'
+                                                    home__fireworkGun_threeID.style.bottom = progress * 350 + 'px'
+                                                    home__fireworkGun_threeID.style.marginLeft = progress * 50 + 'px'
+                                                } else {
+                                                    home__fireworkGun_oneID.style.bottom = progress * 200 + 'px'
+                                                    home__fireworkGun_oneID.style.marginLeft = progress * -50 + 'px'
+                                                    home__fireworkGun_twoID.style.bottom = progress * 300 + 'px'
+                                                    home__fireworkGun_threeID.style.bottom = progress * 350 + 'px'
+                                                    home__fireworkGun_threeID.style.marginLeft = progress * 150 + 'px'
+                                                }
+                                            } else {
+                                                home__fireworkGun_oneID.style.bottom = progress * 200 + 'px'
+                                                home__fireworkGun_oneID.style.marginLeft = progress * -50 + 'px'
+                                                home__fireworkGun_twoID.style.bottom = progress * 400 + 'px'
+                                                home__fireworkGun_threeID.style.bottom = progress * 350 + 'px'
+                                                home__fireworkGun_threeID.style.marginLeft = progress * 400 + 'px'
+                                            }
+                                        } else {
+                                            home__fireworkGun_oneID.style.bottom = progress * 300 + 'px'
+                                            home__fireworkGun_oneID.style.marginLeft = progress * -150 + 'px'
+                                            home__fireworkGun_twoID.style.bottom = progress * 600 + 'px'
+                                            home__fireworkGun_threeID.style.bottom = progress * 450 + 'px'
+                                            home__fireworkGun_threeID.style.marginLeft = progress * 400 + 'px'
+                                        }
+                                    } else {
+                                        home__fireworkGun_oneID.style.bottom = progress * 300 + 'px'
+                                        home__fireworkGun_oneID.style.marginLeft = progress * -250 + 'px'
+                                        home__fireworkGun_twoID.style.bottom = progress * 600 + 'px'
+                                        home__fireworkGun_threeID.style.bottom = progress * 450 + 'px'
+                                        home__fireworkGun_threeID.style.marginLeft = progress * 400 + 'px'
+                                    }
+                                }
+                            })
+                        }
+                    </script>
+
+                <img src="./img/home/scrollDown.svg" alt="scroll-down" class="home__scroll-img">
+            </div>
+        </article>
+        <span class="cursor-container" id="home__cursor">
+            <div class="cursor">
+                <div class="cursor__wave fireworkBox"> <!-- последний класс - это id объекта который должен реагировать на клик -->
+                </div>
+            </div>
+
+        </span>
+    </section>
+
+    <section class="gallery">
+        <div class="gallery__container">
+            <div class="gallery__grid1">
+                <button class="photo" id="photo-1" title="click me">
+                    <p class="birthdayWish">Здоровья</p>
+                </button>
+                <button class="photo" id="photo-2" title="click me">
+                    <p class="birthdayWish">Удачи</p>
+                </button>
+                <button class="photo" id="photo-3" title="click me">
+                    <p class="birthdayWish">Радости</p>
+                </button>
+                <button class="photo" id="photo-4" title="click me">
+                    <p class="birthdayWish">Счастья</p>
+                </button>
+                <button class="photo" id="photo-5" title="click me">
+                    <p class="birthdayWish">Благополучия</p>
+                </button>
+                
+                <span class="cursor-container" id="gallery__cursor">
+                    <div class="cursor">
+                        <div class="cursor__wave photo-5"> <!-- последний класс - это id объекта который должен реагировать на клик -->
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="gallery__grid2">
+                <button class="photo" id="photo-6" title="click me">
+                    <p class="birthdayWish">Процветания</p>
+                </button>
+                <button class="photo" id="photo-7" title="click me">
+                    <p class="birthdayWish">Вдохновения</p>
+                </button>
+                <button class="photo" id="photo-8" title="click me">
+                    <p class="birthdayWish">Достижений</p>
+                </button>
+            </div>
+        </div>
+
+
+    </section>
+    
+    <footer class="footer">
+        <hr class="footer__horizontal-line">
+        <div class="footer__container">
+            <div class="footer__copyright">
+                <p class="footer__copyright-text">© 2023, dementevYaroslav</p>
+            </div>
+
+            <div class="footer__social">
+                <a href="https://t.me/dementevYaroslav"><img src="./img/footer/toTelegram.png" alt="telegram" class="footer__social-imgs" id="footer__telegram"></a>
+                <a href="whatsapp://send?phone=79660190767"><img src="./img/footer/toWhatsapp.png" alt="whatsapp" class="footer__social-imgs" id="footer__whatsapp"></a>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- ***** scripts ***** -->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script defer src="./javascript/script.js"></script>
+    <script src="./javascript/slider.js"></script>
+<!-- *//** scripts ***** -->
+</body>
+</html>

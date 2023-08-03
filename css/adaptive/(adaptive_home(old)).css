@@ -1,0 +1,219 @@
+/*========== Desktop First ========== */
+@media only screen and (max-width: 1500px) {
+    /*  */
+}
+
+@media only screen and (max-width: 1286px) {
+/* @media only screen and (max-width: 1440px) { */
+/* @media only screen and (max-width: 1627px) { */
+    .slide img {
+        width: auto;
+        height: 100%;
+        min-height: min-content;
+        max-height: max-content;
+        min-width: min-content;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .slide img {
+        height: 100%;
+        width: auto;
+        min-width: min-content;
+        max-width: max-content;
+        min-height: min-content;
+        max-height: max-content;
+    }
+}
+
+@media only screen and (max-width: 975px) {
+/* @media only screen and (max-width: 1085px) { */
+     #slide-1 img {
+        content: url("../../img/home/Tablet/tabletHomeBG_1.png")
+    }
+     #slide-2 img {
+        content: url("../../img/home/Tablet/tabletHomeBG_2.png")
+    }
+     #slide-3 img {
+        content: url("../../img/home/Tablet/tabletHomeBG_3.png")
+    }
+     #slide-4 img {
+        content: url("../../img/home/Tablet/tabletHomeBG_4.png")
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+/* ----- home ----- */
+     /* #slide-1 {
+        content: url("../../img/home/Tablet/tabletHomeBG_1.png")
+    }
+     #slide-2 {
+        content: url("../../img/home/Tablet/tabletHomeBG_2.png")
+    }
+     #slide-3 {
+        content: url("../../img/home/Tablet/tabletHomeBG_3.png")
+    }
+     #slide-4 {
+        content: url("../../img/home/Tablet/tabletHomeBG_4.png")
+    } */
+
+    .home__congratulation-container {
+        width: 572px;
+        height: 253px;
+
+        margin-left: 10%;
+        
+        border-radius: 55px 55px 0px 0px;
+        background-image: none;
+        background-color: #fff;
+    }
+    .home__title {
+        font-size: 63px;
+    }
+    .home__text {
+        left: 90px;
+    }
+    #fireworkBox {
+        bottom: 245px;
+    }
+    .home__scroll-img {
+        width: 142px;
+        height: 136px;
+        bottom: 22%;
+        margin-right: -35%;
+    }
+/* -//-- home ----- */
+}
+
+@media only screen and (max-width: 857px) {
+/* ----- home ----- */
+    .slide img {
+        height: 100%;
+        width: auto;
+        min-width: min-content;
+        max-width: max-content;
+        min-height: min-content;
+        max-height: max-content;
+    }
+    
+
+    .home__congratulation-container {
+        width: 100%;
+        
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .home__congratulation-content {
+        padding-left: 0;
+    }
+    .home__title {
+        font-size: 72px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home__text {
+        position: static;
+
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-top: -25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        .home__text::before {
+            max-width: fit-content;
+            max-height: 5000px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    #fireworkBox {
+        width: 130px;
+        height: 130px;
+    }
+    .home__scroll-img {
+        display: none;
+    }
+/* -//-- home ----- */
+}
+
+@media only screen and (max-width: 768px) {
+    .slide img {
+        height: auto;
+        width: 100%;
+        min-width: min-content;
+        max-width: max-content;
+        min-height: min-content;
+        max-height: max-content;
+    }
+    /* #slide-1 {
+        content: url("../../img/home/Mobile/mobileHomeBG_1.png")
+    }
+    #slide-2 {
+        content: url("../../img/home/Mobile/mobileHomeBG_2.png")
+    }
+    #slide-3 {
+        content: url("../../img/home/Mobile/mobileHomeBG_3.png")
+    }
+    #slide-4 {
+        content: url("../../img/home/Mobile/mobileHomeBG_4.png")
+    } */
+}
+
+@media only screen and (max-width: 521px) {
+/* ----- home ----- */
+    .slide img {
+        height: auto;
+        min-width: 100%;
+        max-width: max-content;
+        min-height: min-content;
+        max-height: max-content;
+    }
+    #slide-1 img {
+        content: url("../../img/home/Mobile/mobileHomeBG_1.png")
+    }
+    #slide-2 img {
+        content: url("../../img/home/Mobile/mobileHomeBG_2.png")
+    }
+    #slide-3 img {
+        content: url("../../img/home/Mobile/mobileHomeBG_3.png")
+    }
+    #slide-4 img {
+        content: url("../../img/home/Mobile/mobileHomeBG_4.png")
+    }
+
+    .home__congratulation-container {
+        min-height: 400px;
+        margin-bottom: -150px;
+    }
+    .home__text {
+        font-size: 50px;
+        margin-top: 25px;
+    }
+        .home__text::before {
+            min-width: 306px;
+            height: 10px;
+        }
+    #fireworkBox {
+        bottom: 350px;
+    }
+/* -//-- home ----- */
+}
+
+@media only screen and (max-width: 331px) {
+/* ----- home ----- */
+    .home__text > div {
+        position: absolute;
+    }
+/* -//-- home ----- */
+}
+
+@media only screen and (max-width: 305px) {
+/* ----- home ----- */
+
+/* -//-- home ----- */
+}
